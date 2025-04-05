@@ -83,7 +83,7 @@ This mock API returns a simulated classification and risk level based on the inv
 simple decision table in JSON format that a non-technical operation manager could edit
 
 It will have: 
-# RuleId, Condition, Action
+##### RuleId, Condition, Action
 
 Using which service will evaluates invoice data.
 
