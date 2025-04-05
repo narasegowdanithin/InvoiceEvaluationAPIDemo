@@ -1,24 +1,26 @@
 ﻿using InvoiceEvaluationService.Helpers;
 
-
-[TestFixture]
-public class FileHelperTests
+namespace InvoiceEvaluationAPI.Test.IntegrationTests
 {
-    [Test]
-    public void ConvertFileToBase64_ShouldReturnValidBase64String()
+    [TestFixture]
+    public class FileHelperTests
     {
-       
-        string filePath = "test_evaluation_file.txt";
-        File.WriteAllText(filePath, "Sample Evaluation Content");
+        [Test]
+        public void ConvertFileToBase64_ShouldReturnValidBase64String()
+        {
 
-       
-        string base64String = EvaluationFileHelper.ConvertFileToBase64(filePath);
+            string filePath = "test_evaluation_file.txt";
+            File.WriteAllText(filePath, "Sample Evaluation Content");
 
-        // Assert
-        Assert.That(string.IsNullOrEmpty(base64String), Is.False, "Base64 string should not be null or empty.");
-        Assert.DoesNotThrow(() => Convert.FromBase64String(base64String), "Base64 string should be valid.");
 
-        // Clean up
-        File.Delete(filePath);
+            string base64String = EvaluationFileHelper.ConvertFileToBase64(filePath);
+
+            // Assert
+            Assert.That(string.IsNullOrEmpty(base64String), Is.False, "Base64 string should not be null or empty.");
+            Assert.DoesNotThrow(() => Convert.FromBase64String(base64String), "Base64 string should be valid.");
+
+            // Clean up
+            File.Delete(filePath);
+        }
     }
 }
