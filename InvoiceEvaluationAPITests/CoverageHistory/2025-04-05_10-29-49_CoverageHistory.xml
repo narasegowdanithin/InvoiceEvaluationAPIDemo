@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2025-04-05_10-29-49" tag="">
+  <assembly name="InvoiceEvaluationAPI">
+    <class name="InvoiceEvaluationAPI.Controllers.InvoiceEvaluationController" coveredlines="36" coverablelines="43" totallines="86" coveredbranches="1" totalbranches="2" coveredcodeelements="2" fullcoveredcodeelements="1" totalcodeelements="2" />
+    <class name="InvoiceEvaluationAPI.Models.ClassificationResponse" coveredlines="2" coverablelines="2" totallines="11" coveredbranches="0" totalbranches="0" coveredcodeelements="2" fullcoveredcodeelements="2" totalcodeelements="2" />
+    <class name="InvoiceEvaluationAPI.Models.InvoiceEvaluationRequest" coveredlines="6" coverablelines="6" totallines="28" coveredbranches="0" totalbranches="0" coveredcodeelements="6" fullcoveredcodeelements="6" totalcodeelements="6" />
+    <class name="InvoiceEvaluationAPI.Models.Rule" coveredlines="3" coverablelines="3" totallines="9" coveredbranches="0" totalbranches="0" coveredcodeelements="3" fullcoveredcodeelements="3" totalcodeelements="3" />
+    <class name="InvoiceEvaluationAPI.Services.InvoiceClassificationService" coveredlines="22" coverablelines="30" totallines="55" coveredbranches="1" totalbranches="2" coveredcodeelements="3" fullcoveredcodeelements="1" totalcodeelements="3" />
+    <class name="InvoiceEvaluationAPI.Validation.InvoiceValidationAttribute" coveredlines="12" coverablelines="21" totallines="43" coveredbranches="3" totalbranches="6" coveredcodeelements="2" fullcoveredcodeelements="1" totalcodeelements="2" />
+    <class name="InvoiceEvaluationService.Helpers.EvaluationFileHelper" coveredlines="26" coverablelines="29" totallines="54" coveredbranches="3" totalbranches="4" coveredcodeelements="2" fullcoveredcodeelements="1" totalcodeelements="2" />
+    <class name="InvoiceEvaluationService.Models.InvoiceEvaluationResult" coveredlines="5" coverablelines="5" totallines="14" coveredbranches="0" totalbranches="0" coveredcodeelements="5" fullcoveredcodeelements="5" totalcodeelements="5" />
+    <class name="Program" coveredlines="27" coverablelines="29" totallines="53" coveredbranches="2" totalbranches="2" coveredcodeelements="1" fullcoveredcodeelements="0" totalcodeelements="1" />
+    <class name="RuleEngineService" coveredlines="71" coverablelines="76" totallines="128" coveredbranches="22" totalbranches="26" coveredcodeelements="7" fullcoveredcodeelements="0" totalcodeelements="7" />
+  </assembly>
+</coverage>

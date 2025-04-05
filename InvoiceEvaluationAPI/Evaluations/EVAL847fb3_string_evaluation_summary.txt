@@ -1,0 +1,11 @@
+Evaluation Summary Report
+-------------------------
+Evaluation ID: EVAL847fb3
+Invoice ID: string
+Classification: WaterLeakDetection
+Rules Applied:
+- Approve
+
+Evaluation Result: The evaluation was successfully processed.
+
+Thank you for using our evaluation service.

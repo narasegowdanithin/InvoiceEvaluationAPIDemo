@@ -1,0 +1,11 @@
+Evaluation Summary Report
+-------------------------
+Evaluation ID: EVAL87f60e
+Invoice ID: stringabc
+Classification: BasementWaterproofing
+Rules Applied:
+- Approve
+
+Evaluation Result: The evaluation was successfully processed.
+
+Thank you for using our evaluation service.

@@ -1,0 +1,28 @@
+[
+    {
+        "RuleId": 1,
+        "Condition": "amount < 1000 && riskLevel == 'Low'",
+        "Action": "Approve"
+    },
+    {
+        "RuleId": 2,
+        "Condition": "classification == 'FireDamagedWallRepair' && riskLevel == 'High'",
+        "Action": "Flag for Review"
+    },
+    {
+        "RuleId": 3,
+        "Condition": "amount > 5000 && riskLevel != 'Low'",
+        "Action": "Escalate to Supervisor"
+    },
+    {
+        "RuleId": 4,
+        "Condition": "amount < 5000 && riskLevel!='Low'" ,
+        "Action": "Approve"
+    },
+    {
+        "RuleId": 5,
+        "Condition": "amount > 10000 && riskLevel!='High' && classification != 'FireDamagedWallRepair'",
+        "Action": "Flag for Review"
+    }
+
+]

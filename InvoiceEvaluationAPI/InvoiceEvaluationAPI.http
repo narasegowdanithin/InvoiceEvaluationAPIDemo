@@ -1,0 +1,6 @@
+@InvoiceEvaluationAPI_HostAddress = http://localhost:9001
+
+GET {{InvoiceEvaluationAPI_HostAddress}}/InvoiceEvaluation/
+Accept: application/json
+
+###
