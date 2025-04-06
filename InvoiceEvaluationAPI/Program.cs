@@ -40,7 +40,12 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "Invoice Evaluation API",
         Version = "v1",
-        Description = "API to evaluate and classify invoices."
+        Description = "API to evaluate and classify invoices.",
+        Contact = new OpenApiContact
+        {
+            Name = ":" + "  Narase Gowda Kumbaiah",
+            Email = "narasegowdanithin@gmail.com"
+        }
     });
 });
 
