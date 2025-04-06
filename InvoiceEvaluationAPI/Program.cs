@@ -1,4 +1,5 @@
 using InvoiceEvaluationAPI.Services;
+using Microsoft.OpenApi.Models;
 using RestSharp;
 using Serilog;
 
@@ -33,7 +34,15 @@ builder.Host.UseSerilog();
 // Add services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Invoice Evaluation API",
+        Version = "v1",
+        Description = "API to evaluate and classify invoices."
+    });
+});
 
 var app = builder.Build();
 
