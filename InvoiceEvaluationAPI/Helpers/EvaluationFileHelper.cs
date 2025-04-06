@@ -40,8 +40,6 @@ namespace InvoiceEvaluationService.Helpers
 
             // Write the evaluation content to the file
             File.WriteAllText(filePath, sb.ToString());
-            byte[] fileBytes = File.ReadAllBytes(filePath);
-            string base64File = Convert.ToBase64String(fileBytes);
 
             return filePath; // Return the local file path where the file is saved
         }
