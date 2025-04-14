@@ -62,7 +62,7 @@ namespace InvoiceEvaluationAPI.Controllers
                 string evaluationId = $"EVAL{Guid.NewGuid().ToString().Substring(0, 6)}";
                 string filepath = EvaluationFileHelper.GenerateEvaluationFile(evaluationId, request.InvoiceId, classificationData.Classification, rulesApplied);
 
-                string base64File = EvaluationFileHelper.ConvertFileToBase64(filePath);
+                string base64File = EvaluationFileHelper.ConvertFileToBase64(filepath);
 
                 // Create the result object
                 var evaluationResult = new InvoiceEvaluationResult
